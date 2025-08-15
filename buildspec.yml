@@ -1,0 +1,35 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing dependencies...
+      # If you have NodeJS or Python projects, install packages here
+      # Example for NodeJS:
+      # - npm install
+      # Example for Python:
+      # - pip install -r requirements.txt
+
+  pre_build:
+    commands:
+      - echo Pre-build steps...
+      # Run tests or linting if needed
+      # - npm run lint
+      # - npm test
+
+  build:
+    commands:
+      - echo Building the project...
+      # If no build step is needed, you can leave this empty
+      # If you have frontend build step, example:
+      # - npm run build
+      # Otherwise, just keep files as they are
+
+  post_build:
+    commands:
+      - echo Build completed on `date`
+
+artifacts:
+  files:
+    - '**/*'          # Includes all files and folders
+  discard-paths: no   # Keeps folder structure exactly as in GitHub
