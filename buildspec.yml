@@ -3,23 +3,16 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo Installing dependencies...
+      - echo "No dependencies to install"
       # If you have NodeJS or Python projects, install packages here
       # Example for NodeJS:
       # - npm install
       # Example for Python:
       # - pip install -r requirements.txt
 
-  pre_build:
-    commands:
-      - echo Pre-build steps...
-      # Run tests or linting if needed
-      # - npm run lint
-      # - npm test
-
   build:
     commands:
-      - echo Building the project...
+      - echo "No build steps, just packaging files"
       # If no build step is needed, you can leave this empty
       # If you have frontend build step, example:
       # - npm run build
