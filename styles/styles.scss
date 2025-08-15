@@ -836,3 +836,70 @@ section {
 }
 
 @import './media';
+
+
+// =========================
+// Responsive Design
+// =========================
+
+// Tablet and smaller desktops
+@media (max-width: 1024px) {
+  section {
+    padding: 2rem 5rem;
+  }
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+  .left-header, .right-header {
+    padding: 0 !important;
+    max-width: 100%;
+  }
+  .left-header .image {
+    width: 220px;
+    height: auto;
+  }
+}
+
+// Tablets and large phones
+@media (max-width: 768px) {
+  section {
+    padding: 1.5rem 2rem;
+  }
+  .header-content .right-header .name {
+    font-size: 2rem;
+  }
+  .header-content .right-header p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .left-header .image {
+    width: 180px;
+  }
+}
+
+// Small phones
+@media (max-width: 480px) {
+  section {
+    padding: 1rem;
+  }
+  .header-content .right-header .name {
+    font-size: 1.4rem;
+  }
+  .header-content .right-header p {
+    font-size: 0.95rem;
+  }
+  .left-header .image {
+    width: 140px;
+  }
+}
+
+// Ensure images scale
+.left-header .image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
