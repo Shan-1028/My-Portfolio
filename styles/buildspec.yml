@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo "Preparing files for deployment..."
+artifacts:
+  files:
+    - '**/*'
+  base-directory: .
+
+#✅ This tells AWS:
+
+    #“Take everything in the repo (with folders)”
+
+    #“Pass it to the next stage exactly as is”
